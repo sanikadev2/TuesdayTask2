@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="App1.Page2">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout Orientation="Horizontal">
+               
+                <Button Grid.Column="0" Grid.Row="0" ImageSource="small" HorizontalOptions="Start"  BackgroundColor="Transparent" Text="Ship To" TextTransform="None"  FontSize="Large" FontAttributes="Bold" >
+
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="1" Text="+"  FontSize="40" FontAttributes="Bold" WidthRequest="40" BackgroundColor="Transparent" TextColor="DeepSkyBlue" HorizontalOptions="EndAndExpand"  Margin="0,15,15,0"/>
+            </StackLayout>
+            <Line X1="0"
+      Y1="20"
+      X2="1800"
+      Y2="20"
+      StrokeLineCap="Flat"
+      Stroke="Black"
+      StrokeThickness="2" />
+            <Frame BorderColor="DeepSkyBlue" HeightRequest="170" WidthRequest="10" Margin="10" CornerRadius="15" HasShadow="True">
+                <StackLayout >
+                    <Label Text="Priscekila" FontAttributes="Bold" TextColor="Black"></Label>
+                    <Label Text="3711 Spring Hill Rd underfined Tallahassee, Nevada 52874 United States"></Label>
+                    <Label Text="+99 1234567890"></Label>
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit" TextColor="White" BackgroundColor="DeepSkyBlue"/>
+                        <ImageButton Source="delete"  WidthRequest="20" HeightRequest="20" BackgroundColor="Transparent"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="White" HeightRequest="130" WidthRequest="10" Margin="10" CornerRadius="15" HasShadow="True">
+                <StackLayout >
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Ahmad Khaidir" FontAttributes="Bold" TextColor="Black"></Label>
+                        <Label Text="3711 Spring Hill Rd underfined Tallahassee, Nevada 52874 United States"></Label>
+                        <Label Text="+99 1234567890"></Label>
+                    </StackLayout>
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Button Text="Edit" TextColor="White" BackgroundColor="DeepSkyBlue"/>
+                        <ImageButton Source="delete"  WidthRequest="20" HeightRequest="20" BackgroundColor="Transparent"/>
+                    </StackLayout>
+                </StackLayout>
+                
+            </Frame>
+            <Button
+                Text="Next"
+                Margin="20"
+                            BackgroundColor="White"
+                            TextColor="White"
+                            d:BackgroundColor="DeepSkyBlue"
+                            HeightRequest="60"
+                            WidthRequest="10"
+                            VerticalOptions="End"
+                            CornerRadius="10"></Button>
+        </StackLayout>
+      
+    </ContentPage.Content>
+</ContentPage>
